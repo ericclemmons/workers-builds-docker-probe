@@ -1,0 +1,13 @@
+{
+	"name": "workers-builds-docker-probe",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"probe": "bash scripts/probe.sh",
+		"deploy": "wrangler deploy",
+		"types": "wrangler types"
+	},
+	"devDependencies": {
+		"wrangler": "^4.160.1"
+	}
+}
