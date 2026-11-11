@@ -9,7 +9,7 @@ nested `/proc` mount.
 
 1. Fork or push this repo, then in the dashboard go to **Workers & Pages** > **Create** > **Import a repository**.
 2. Set the build settings:
-   - **Build command:** `npm run probe`
+   - **Build command:** `npm run build`
    - **Deploy command:** `npx wrangler deploy` (or `npx wrangler deploy --dry-run` to build the image without deploying)
 3. Optional: create a deploy hook under **Settings** > **Builds** to re-run the probe on demand or on a schedule.
 

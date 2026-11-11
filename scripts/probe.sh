@@ -16,6 +16,7 @@ echo "== environment"
 uname -a
 id
 grep -E '^(CapBnd|CapEff)' /proc/self/status
+echo "open files: soft $(ulimit -Sn), hard $(ulimit -Hn)"
 
 echo "== mounts over /proc and /sys (any line here blocks a nested procfs or sysfs mount)"
 awk '$5 ~ "^/(proc|sys)/" { print $5, $9 }' /proc/self/mountinfo
